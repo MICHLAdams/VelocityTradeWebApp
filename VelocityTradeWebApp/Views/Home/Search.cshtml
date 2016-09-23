@@ -3,7 +3,7 @@
 }
 
 <h2>Search</h2>
-<p>Search returned the following results for Github repos where the Language is C#:</p>
+<div id="Done"></div>
 <div id="DynamicContent"></div>
 
 
@@ -16,6 +16,7 @@
 
 
     SearchValue = "csharp";
+    
     $("<div class='list-group'>").appendTo('#DynamicContent');
     $.getJSON(requestBaseUrl + SearchValue, function (json, status) { })
     // Success then append items to divs
@@ -30,5 +31,6 @@
                                   "<li>The description of the repo : " + json.repositories[i].description + "</li></ul>").appendTo('#' + json.repositories[i].owner)
 
         });
+        $("<p>The following C# Git Repos were found:</p>").appendTo('#Done');
     })
 </script>
