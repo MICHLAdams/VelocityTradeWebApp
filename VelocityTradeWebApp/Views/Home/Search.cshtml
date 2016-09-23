@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Search</h2>
+<p>Search returned the following results for Github repos where the Language is C#:</p>
+<div id="DynamicContent"></div>
+
+
+<script type="text/javascript">
+    //variables
+    var search,
+    results,
+    SearchValue,
+    requestBaseUrl = 'https://api.github.com/legacy/repos/search/';
+
+
+    SearchValue = "csharp";
+    $("<div class='list-group'>").appendTo('#DynamicContent');
+    $.getJSON(requestBaseUrl + SearchValue, function (json, status) { })
+    // Success then append items to divs
+    .done(function (json) {
+        $.each(json.repositories, function (i, repositories) {
+            $("<h4 id ='" + json.repositories[i].owner + "'class='list-group-item-heading'>" + json.repositories[i].owner + " - " + json.repositories[i].name + "</h4>")
+							.appendTo('#DynamicContent div')
+
+            $("<ul><li>Repo Lanuage is : " + json.repositories[i].language + "</li>" +
+                                  "<li>There are " + json.repositories[i].followers + " followers of this repo.</li>" +
+                                  "<li>The URL of the repo is : " + json.repositories[i].url + "</li>" +
+                                  "<li>The description of the repo : " + json.repositories[i].description + "</li></ul>").appendTo('#' + json.repositories[i].owner)
+
+        });
+    })
+</script>

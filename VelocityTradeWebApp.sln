@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelocityTradeWebApp", "VelocityTradeWebApp\VelocityTradeWebApp.csproj", "{BA64A2EB-A071-4F2C-A74C-487F71B5520F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelocityTradeWebApp.Tests", "VelocityTradeWebApp.Tests\VelocityTradeWebApp.Tests.csproj", "{F3448E88-2DC5-4662-924D-877D6C8D9A18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA64A2EB-A071-4F2C-A74C-487F71B5520F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA64A2EB-A071-4F2C-A74C-487F71B5520F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA64A2EB-A071-4F2C-A74C-487F71B5520F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA64A2EB-A071-4F2C-A74C-487F71B5520F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3448E88-2DC5-4662-924D-877D6C8D9A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3448E88-2DC5-4662-924D-877D6C8D9A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3448E88-2DC5-4662-924D-877D6C8D9A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3448E88-2DC5-4662-924D-877D6C8D9A18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
