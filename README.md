@@ -1,5 +1,5 @@
 # VelocityTradeWebApp
-Assesment
+
 Hi Guys, just a few points before Running.
 
 1)For authentication i've gone ahead and used identity because this allowed me to get up and running with minimal code and build DB work and ensures that
