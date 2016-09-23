@@ -7,6 +7,7 @@ using Microsoft.AspNet.Identity.Owin;
 
 namespace VelocityTradeWebApp.Controllers
 {
+    [RequireHttps]
     public class HomeController : Controller
     {
         public ActionResult Index()

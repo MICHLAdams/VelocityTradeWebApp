@@ -58,11 +58,11 @@ namespace VelocityTradeWebApp
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "625540371548-b3ssp7mmcgvbfgmdmrbt32onrord2s68.apps.googleusercontent.com",
+                ClientSecret = "wISanIhyxJiavKiJTsBsM9Ru"
+            });
         }
     }
 }
