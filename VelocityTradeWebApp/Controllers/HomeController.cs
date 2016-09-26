@@ -14,21 +14,10 @@ namespace VelocityTradeWebApp.Controllers
         {
             return View();
         }
-        public ActionResult Search(SignInStatus? Auth)
+        [AuthorizeAttribute]
+        public ActionResult Search()
         {
-            if (Auth == null) { return RedirectToAction("Login", "Account"); }
-
-            switch (Auth)
-            {
-                case SignInStatus.Success:
                     return View();
-                case SignInStatus.LockedOut:
-                    return View("Lockout");
-                case SignInStatus.Failure:
-                default:
-                    ModelState.AddModelError("", "Invalid login attempt.");
-                    return RedirectToAction("Index", "Home");
-            }
         }
     }
 }
