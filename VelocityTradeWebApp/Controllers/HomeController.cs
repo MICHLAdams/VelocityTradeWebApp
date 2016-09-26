@@ -14,10 +14,11 @@ namespace VelocityTradeWebApp.Controllers
         {
             return View();
         }
+
         [AuthorizeAttribute]
         public ActionResult Search()
         {
-                    return View();
+            return View();
         }
     }
 }

@@ -27,7 +27,7 @@
 
             $("<ul><li>Repo Lanuage is : " + json.repositories[i].language + "</li>" +
                                   "<li>There are " + json.repositories[i].followers + " followers of this repo.</li>" +
-                                  "<li>The URL of the repo is : " + json.repositories[i].url + "</li>" +
+                                  "<li>Navigate to the repo : <a href='" +  json.repositories[i].url + "'>Here</a></li>" +
                                   "<li>The description of the repo : " + json.repositories[i].description + "</li></ul>").appendTo('#' + json.repositories[i].owner)
 
         });
